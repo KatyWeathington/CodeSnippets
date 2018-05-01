@@ -1,11 +1,8 @@
-<html>
-<body>
-<script src="https://d3js.org/d3.v5.min.js"></script>
-<script>
+//<script src="https://d3js.org/d3.v5.min.js"></script>
 //creates an svg with optional scales & axis
-var height=400;
-var width =400;
-var padding=40;
+var height = 400;
+var width = 400;
+var padding = 40;
 
 var svg=d3.select('body').append("svg")
 	.attr('height', height+2*padding).attr('width', width+2*padding)
@@ -25,7 +22,3 @@ var yAxis = d3.axisLeft(yScale);
 svg.append("g").call(yAxis);
 svg.append("text").attr("transform", "rotate(270)")
 .attr("x", -width / 2).attr("y", -25).text("Y-Axis");
-
-</script>
-</body>
-</html>
